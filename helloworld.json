@@ -1,0 +1,16 @@
+{
+  "builders": [
+    {
+      "type": "file",
+      "name": "example",
+      "target": "./test_artifact.txt",
+      "content": "example content"
+    }
+  ],
+  "provisioners": [
+    {
+      "type": "shell-local",
+      "inline": ["echo foo"]
+    }
+  ]
+}
